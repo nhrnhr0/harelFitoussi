@@ -358,4 +358,10 @@ form .submit-wraper .submit:hover {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+.fotter img {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  max-width: 250px;
+}
 /*# sourceMappingURL=style.css.map */
