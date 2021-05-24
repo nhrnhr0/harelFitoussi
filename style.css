@@ -3,6 +3,19 @@
   --clr-black: #444444;
 }
 
+/* Box-sizing reset: //w3bits.com/?p=3225 */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
 body {
   background-image: url(bg2.jpg);
   background-size: contain;
@@ -202,21 +215,40 @@ form .submit-wraper .submit:hover {
 }
 
 .galery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100vw;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  /* The Masonry Brick */
+  /* Masonry on large screens */
+  /* Masonry on medium-sized screens */
+  /* Masonry on small screens */
+}
+
+.galery .masonry {
+  margin: auto;
+  max-width: 768px;
 }
 
 .galery .item {
-  width: 25%;
-  padding: 25px;
+  background: #fff;
 }
 
-.galery .item img {
-  width: 100%;
+@media only screen and (min-width: 1024px) {
+  .galery .masonry {
+    -webkit-column-count: 4;
+            column-count: 4;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .galery .masonry {
+    -webkit-column-count: 3;
+            column-count: 3;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+  .galery .masonry {
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
 }
 
 .section-3 {
@@ -249,7 +281,73 @@ form .submit-wraper .submit:hover {
   min-width: 750px;
 }
 
-.section-4 {
+.section-4 .header {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.section-4 .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.section-4 .content .part-1 {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  font-size: 2rem;
+}
+
+.section-4 .content .part-1 li {
+  padding-bottom: 7px;
+}
+
+.section-4 .content .part-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.section-4 .content .part-2 img {
+  width: 100%;
+}
+
+.vid {
+  padding: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.resist {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.fotter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

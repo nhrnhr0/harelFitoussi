@@ -5,7 +5,16 @@
     --clr-black: #444444;
     
 }
-
+/* Box-sizing reset: //w3bits.com/?p=3225 */
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
 body {
     background-image: url(bg2.jpg);
     background-size: contain;
@@ -158,16 +167,40 @@ $gray: #9b9b9b;
 }
 
 .galery {
-    display: flex;
-    width: 100vw;
-    flex-wrap: wrap;
-    .item {
-        width: 25%;
-        padding: 25px;
-        img {
-            width: 100%;
+    .masonry {
+        //margin: 1.5em auto;
+        margin: auto;
+        max-width: 768px;
+        //column-gap: 1.5em;
+      }
+      
+      /* The Masonry Brick */
+      .item {
+        background: #fff;
+        //padding: 1em;
+        //margin: 0 0 1.5em;
+      }
+      
+      /* Masonry on large screens */
+      @media only screen and (min-width: 1024px) {
+        .masonry {
+          column-count: 4;
         }
-    }
+      }
+      
+      /* Masonry on medium-sized screens */
+      @media only screen and (max-width: 1023px) and (min-width: 768px) {
+        .masonry {
+          column-count: 3;
+        }
+      }
+      
+      /* Masonry on small screens */
+      @media only screen and (max-width: 767px) and (min-width: 540px) {
+        .masonry {
+          column-count: 2;
+        }
+      }
 }
 .section-3 {
     display: flex; 
@@ -190,7 +223,52 @@ $gray: #9b9b9b;
     }
 }
 
+
+
 .section-4 {
+    .header {
+        font-size: 3rem;
+        text-align: center;
+    }
+    
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        .part-1 {
+            flex: 2;
+            font-size: 2rem;
+            li {
+                padding-bottom: 7px;
+            }
+        }
+        .part-2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex:1;
+            img {
+                
+                width: 100%;
+            }
+        }
+        
+    }
+}
+.vid {
+padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.resist {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.fotter {
     display: flex;
     align-items: center;
     justify-content: center;
