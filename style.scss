@@ -194,6 +194,12 @@ body {
 $primary: #11998e;
 $secondary: #38ef7d;
 */
+::placeholder {
+    color: red;
+    opacity: 1; /* Firefox */
+  }
+
+
 form {
     $primary: var(--clr-black);
     $secondary: #F1D2B0;
@@ -212,6 +218,7 @@ form {
         padding: 15px 0 0;
         margin-top: 10px;
         width: 100%;
+        background: #e2e2e2;
         border: 1px solid var(--clr-grey);
     }
 
@@ -226,6 +233,7 @@ form {
         padding: 7px 0;
         background: transparent;
         transition: border-color 0.2s;
+        
 
         &::placeholder {
             color: transparent;
@@ -244,7 +252,7 @@ form {
         display: block;
         transition: 0.2s;
         font-size: 1rem;
-        color: $gray;
+        color: rgb(24, 24, 24);
     }
 
     .form__field:focus {
