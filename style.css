@@ -838,6 +838,48 @@ form .submit-wraper .submit:hover {
   .vid {
     padding: 10px;
   }
+  .fotter .social ul li .fa {
+    color: #fff;
+  }
+  .fotter .social ul li span {
+    color: #fff;
+  }
+  .fotter .social ul li:nth-child(1) a {
+    background: #3b5897;
+  }
+  .fotter .social ul li:nth-child(1) a:before {
+    background: #365491;
+  }
+  .fotter .social ul li:nth-child(1) a:after {
+    background: #4968ab;
+  }
+  .fotter .social ul li:nth-child(2) a {
+    background: #46b46e;
+  }
+  .fotter .social ul li:nth-child(2) a:before {
+    background: #43b66e;
+  }
+  .fotter .social ul li:nth-child(2) a:after {
+    background: #25d466;
+  }
+  .fotter .social ul li:nth-child(3) a {
+    background: #dd4b39;
+  }
+  .fotter .social ul li:nth-child(3) a:before {
+    background: #b33a2b;
+  }
+  .fotter .social ul li:nth-child(3) a:after {
+    background: #e66a5a;
+  }
+  .fotter .social ul li:nth-child(4) a {
+    background: #e4405f;
+  }
+  .fotter .social ul li:nth-child(4) a:before {
+    background: #d81c3f;
+  }
+  .fotter .social ul li:nth-child(4) a:after {
+    background: #e46880;
+  }
 }
 
 @media screen and (max-width: 403px) {
