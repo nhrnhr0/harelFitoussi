@@ -339,10 +339,6 @@ form .submit-wraper .submit:hover {
   text-decoration: underline;
 }
 
-.section-2 form {
-  min-width: 750px;
-}
-
 .galery {
   /* The Masonry Brick */
   /* Masonry on large screens */
@@ -357,6 +353,7 @@ form .submit-wraper .submit:hover {
 }
 
 .galery .item {
+  max-width: 100vw;
   background: #fff;
 }
 
@@ -405,10 +402,6 @@ form .submit-wraper .submit:hover {
 
 .section-3 .cta .phone:hover {
   text-decoration: underline;
-}
-
-.section-3 form {
-  min-width: 750px;
 }
 
 .section-4 .header {
@@ -465,8 +458,8 @@ form .submit-wraper .submit:hover {
 
 .section-4 .content .part-2 .checkmark {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   border-radius: 50%;
   display: block;
   stroke-width: 2;
@@ -476,6 +469,10 @@ form .submit-wraper .submit:hover {
   -webkit-box-shadow: inset 0px 0px 0px red;
           box-shadow: inset 0px 0px 0px red;
   display: none;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .section-4 .content .part-2 .checkmark.active {
@@ -484,8 +481,8 @@ form .submit-wraper .submit:hover {
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
   display: block;
-  -webkit-animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
-          animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+  -webkit-animation: fill .4s ease-in-out .4s forwards;
+          animation: fill .4s ease-in-out .4s forwards;
 }
 
 .section-4 .content .part-2 .checkmark.active:hover {
@@ -770,5 +767,51 @@ form .submit-wraper .submit:hover {
 
 #footer .container .credits a {
   color: #60a142;
+}
+
+@media screen and (max-width: 1270px) {
+  .fotter .social {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .vid video {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 962px) {
+  .section-1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-4 .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .fotter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .fotter .social {
+    height: 360px;
+    margin-bottom: 40px;
+  }
+  .fotter .social ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .fotter .social ul li {
+    padding: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
