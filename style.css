@@ -297,7 +297,23 @@ form .submit-wraper .submit:hover {
           flex: 1;
 }
 
-.section-1 .img-wraper img {
+.section-1 .img-wraper .img {
+  position: relative;
+}
+
+.section-1 .img-wraper .img .title {
+  position: absolute;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+  z-index: 1;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.section-1 .img-wraper .img img {
   padding: 5px;
   width: calc(100% - 40px);
 }
@@ -812,6 +828,21 @@ form .submit-wraper .submit:hover {
   }
   .fotter .social ul li {
     padding: 20px;
+  }
+}
+
+@media screen and (max-width: 852px) {
+  .cta .phone {
+    display: block !important;
+  }
+  .vid {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 403px) {
+  .cta .phone {
+    font-size: 2.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

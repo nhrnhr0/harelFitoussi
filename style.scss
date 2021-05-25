@@ -315,10 +315,25 @@ form {
 
     .img-wraper {
         flex: 1;
-
-        img {
-            padding: 5px;
-            width: calc(100% - 40px);
+        
+        .img {
+            position: relative;
+            .title {
+                position: absolute;
+                font-size: 2.5rem;
+                font-weight: bold;
+                color:black;
+                ;
+                z-index: 1;
+                top: 20%;  
+                left: 50%; 
+            
+                transform: translate(-50%, -50%);
+            }
+            img {
+                padding: 5px;
+                width: calc(100% - 40px);
+            }
         }
     }
 
@@ -774,3 +789,21 @@ form {
     }
 }
 
+@media screen and (max-width: 852px)  { 
+    .cta{
+        .phone {
+            display: block!important;
+        }
+    }
+    .vid {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 403px)  { 
+    .cta {
+        .phone {
+            font-size: 2.5rem;
+        }
+    }
+}
