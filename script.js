@@ -1,5 +1,10 @@
 
 
+  AOS.init();
+
+
+
+
 function isElementInViewport (el) {
     var rect = el.getBoundingClientRect();
 
