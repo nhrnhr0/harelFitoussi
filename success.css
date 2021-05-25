@@ -1,0 +1,73 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'open_sans_hebrewregular';
+}
+
+:root {
+  --clr-grey: #737E82;
+  --clr-black: #444444;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url(bg2.jpg);
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(bg2.jpg);
+  background-size: contain;
+}
+
+.responsive-shadow {
+  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  -webkit-transition: 0.3s -webkit-box-shadow;
+  transition: 0.3s -webkit-box-shadow;
+  transition: 0.3s box-shadow;
+  transition: 0.3s box-shadow, 0.3s -webkit-box-shadow;
+}
+
+.responsive-shadow:hover, .responsive-shadow:focus {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+          box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.main {
+  padding-top: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffe342;
+  text-align: right;
+  font-size: 2rem;
+}
+
+.main .inner {
+  border-radius: 80px;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--clr-black)), color-stop(var(--clr-grey)), to(var(--clr-black)));
+  background: linear-gradient(var(--clr-black), var(--clr-grey), var(--clr-black));
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.main .inner .img-wraper {
+  margin: auto;
+  max-width: 250px;
+}
+
+.main .inner .img-wraper img {
+  width: 100%;
+}
+/*# sourceMappingURL=success.css.map */
