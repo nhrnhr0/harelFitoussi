@@ -358,7 +358,9 @@ form {
 
         .phone {
             color: red;
-
+            a {
+                color: inherit;
+            }
             &:hover {
                 text-decoration: underline;
             }
@@ -418,7 +420,9 @@ form {
 
         .phone {
             color: red;
-
+            a {
+                color: inherit;
+            }
             &:hover {
                 text-decoration: underline;
             }

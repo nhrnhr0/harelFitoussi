@@ -351,6 +351,10 @@ form .submit-wraper .submit:hover {
   color: red;
 }
 
+.section-2 .cta .phone a {
+  color: inherit;
+}
+
 .section-2 .cta .phone:hover {
   text-decoration: underline;
 }
@@ -414,6 +418,10 @@ form .submit-wraper .submit:hover {
 
 .section-3 .cta .phone {
   color: red;
+}
+
+.section-3 .cta .phone a {
+  color: inherit;
 }
 
 .section-3 .cta .phone:hover {
